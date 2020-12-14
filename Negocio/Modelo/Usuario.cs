@@ -19,7 +19,7 @@ namespace Negocio.Modelo
             //
             if (nombre.Length > 60)
             {
-                this.nombre = nombre.Substring(0,4);
+                this.nombre = nombre.Substring(0,60);
             }
             else
             {
@@ -60,4 +60,16 @@ namespace Negocio.Modelo
 
     }
 
+    internal class UsuarioRepo
+    {
+        internal bool Ingresar(string nombreUsuario, string password, string programa)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal bool Ingresar(string nombreUsuario, string password)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
