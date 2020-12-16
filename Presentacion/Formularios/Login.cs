@@ -21,7 +21,7 @@ namespace Presentacion.Formularios
             bool estaLog= Properties.Settings.Default.estalogueado;
             if (estaLog == true)
             {
-                this.Hide();
+                this.Close();
                 FormInicio p = new FormInicio();
                 p.Show();                
             }
