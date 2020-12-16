@@ -17,6 +17,18 @@ namespace Presentacion.Formularios
         public Login()
         {
             InitializeComponent();
+            
+            bool estaLog= Properties.Settings.Default.estalogueado;
+            if (estaLog == true)
+            {
+                this.Close();
+                FormInicio p = new FormInicio();
+                p.Show();                
+            }
+            else
+            {
+                
+            }
         }
 
         private void btnlogin_Click(object sender, EventArgs e)
@@ -42,6 +54,20 @@ namespace Presentacion.Formularios
                 bool ingreso = usr.Ingresar(nombreUsuario, password, Variables.programa);
                 if (ingreso== true)
                 {
+
+                    if (checkrecordar.Checked == true)                
+                    {
+                        Properties.Settings.Default.UserName = txtuser.Text;
+                        //Properties.Settings.Default.password = txtpassword.Text;
+                        Properties.Settings.Default.estalogueado=true;
+                        Properties.Settings.Default.Save();
+                    }
+                    else
+                    {
+                        Properties.Settings.Default.UserName = "";
+                        //Properties.Settings.Default.password = "";
+                        Properties.Settings.Default.Save();
+                    }                    
                     FormInicio p = new FormInicio();
                     p.Show();
                     //p.ShowDialog();

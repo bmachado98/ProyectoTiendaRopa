@@ -14,12 +14,12 @@ using Presentacion.Helpers;
 
 namespace Presentacion.Formularios
 {
-    public partial class AgregarProducto : Form
+    public partial class EditarProducto : Form
     {
         private readonly Modo modo;
-        //private FormInicio formInicio;
+        private FormInicio formInicio;
 
-        public AgregarProducto()
+        public EditarProducto()
         {
             InitializeComponent();               
         }
@@ -27,11 +27,11 @@ namespace Presentacion.Formularios
         /// se usa para agregar
         /// </summary>
         /// <param name="modo"></param>
-        public AgregarProducto(Modo modo)
+        public EditarProducto(Modo modo, FormInicio formInicio)
         {
             InitializeComponent();
             this.modo = modo;
-            
+            this.formInicio = formInicio;
             this.Text = "Agregar Nuevo Producto";
             groupProd.Text = "Agregar Nuevo Producto";
             // ocultar el boton de editar
@@ -43,7 +43,7 @@ namespace Presentacion.Formularios
         /// </summary>
         /// <param name="prod"></param>
         /// <param name="modo"></param>
-        public AgregarProducto(DataProducto prod, Modo modo)
+        public EditarProducto(DataProducto prod, Modo modo)
         {
 
             InitializeComponent();
@@ -56,10 +56,10 @@ namespace Presentacion.Formularios
             txtid.Enabled = false;
         }
 
-        /*public AgregarProducto(DataProducto prod, Modo modo, FormInicio formInicio) : this(prod, modo)
+        public EditarProducto(DataProducto prod, Modo modo, FormInicio formInicio) : this(prod, modo)
         {
-            
-        }*/
+            this.formInicio = formInicio;
+        }
 
         public void Iniciar()
         {
@@ -149,9 +149,9 @@ namespace Presentacion.Formularios
             }
         }
 
-        /*private void AgregarProducto_FormClosing(object sender, FormClosingEventArgs e)
+        private void AgregarProducto_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //formInicio.ActulizarProductos();
-        }*/
+            formInicio.ActulizarProductos();
+        }
     }
 }

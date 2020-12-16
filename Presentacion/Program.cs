@@ -17,11 +17,21 @@ namespace Presentacion
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            /*Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormInicio());
-            Application.Run(new Login());
-            
+            Application.Run(new Login());*/
+
+
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            Login main = new Login();
+            main.Show();
+            Application.Run(); // quítale el parámetro aquí
+
+
+
 
             //Application.Run(new FomularioLogin());
         }

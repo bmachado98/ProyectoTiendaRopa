@@ -1,6 +1,6 @@
 ﻿namespace Presentacion.Formularios
 {
-    partial class AgregarProducto
+    partial class EditarProducto
     {
         /// <summary>
         /// Required designer variable.
@@ -213,7 +213,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AgregarProducto";
             this.Text = "Agregar Producto";
-            
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AgregarProducto_FormClosing);
             this.groupProd.ResumeLayout(false);
             this.groupProd.PerformLayout();
             this.ResumeLayout(false);
