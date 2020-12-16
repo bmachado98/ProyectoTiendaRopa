@@ -59,17 +59,4 @@ namespace Negocio.Modelo
 
 
     }
-
-    internal class UsuarioRepo
-    {
-        internal bool Ingresar(string nombreUsuario, string password, string programa)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal bool Ingresar(string nombreUsuario, string password)
-        {
-            throw new NotImplementedException();
-        }
-    }
 }

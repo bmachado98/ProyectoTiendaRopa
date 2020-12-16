@@ -15,3 +15,12 @@ C:\Users\lcalvetti1\Documents\UTU\Programacion3\apoyaturaPla\clase01\clase07\Lib
 C:\Users\lcalvetti1\Documents\UTU\Programacion3\apoyaturaPla\clase01\clase07\Libreria\obj\Debug\netstandard2.0\Libreria.dll
 C:\Users\lcalvetti1\Documents\UTU\Programacion3\apoyaturaPla\clase01\clase07\Libreria\obj\Debug\netstandard2.0\Libreria.pdb
 C:\Users\lcalvetti1\Documents\UTU\Programacion3\apoyaturaPla\clase01\clase07\Libreria\obj\Debug\netstandard2.0\Libreria.csprojAssemblyReference.cache
+C:\ApoyaturaProgramacion\Proyecto\proyectoApoyatura\Libreria\bin\Debug\netstandard2.0\Libreria.deps.json
+C:\ApoyaturaProgramacion\Proyecto\proyectoApoyatura\Libreria\bin\Debug\netstandard2.0\Libreria.dll
+C:\ApoyaturaProgramacion\Proyecto\proyectoApoyatura\Libreria\bin\Debug\netstandard2.0\Libreria.pdb
+C:\ApoyaturaProgramacion\Proyecto\proyectoApoyatura\Libreria\obj\Debug\netstandard2.0\Libreria.csprojAssemblyReference.cache
+C:\ApoyaturaProgramacion\Proyecto\proyectoApoyatura\Libreria\obj\Debug\netstandard2.0\Libreria.AssemblyInfoInputs.cache
+C:\ApoyaturaProgramacion\Proyecto\proyectoApoyatura\Libreria\obj\Debug\netstandard2.0\Libreria.AssemblyInfo.cs
+C:\ApoyaturaProgramacion\Proyecto\proyectoApoyatura\Libreria\obj\Debug\netstandard2.0\Libreria.csproj.CoreCompileInputs.cache
+C:\ApoyaturaProgramacion\Proyecto\proyectoApoyatura\Libreria\obj\Debug\netstandard2.0\Libreria.dll
+C:\ApoyaturaProgramacion\Proyecto\proyectoApoyatura\Libreria\obj\Debug\netstandard2.0\Libreria.pdb
