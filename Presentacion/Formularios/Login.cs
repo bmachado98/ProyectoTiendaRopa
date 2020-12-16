@@ -16,19 +16,7 @@ namespace Presentacion.Formularios
     {
         public Login()
         {
-            InitializeComponent();
-            
-            bool estaLog= Properties.Settings.Default.estalogueado;
-            if (estaLog == true)
-            {
-                this.Close();
-                FormInicio p = new FormInicio();
-                p.Show();                
-            }
-            else
-            {
-                
-            }
+            InitializeComponent();                                    
         }
 
         private void btnlogin_Click(object sender, EventArgs e)
@@ -67,7 +55,8 @@ namespace Presentacion.Formularios
                         Properties.Settings.Default.UserName = "";
                         //Properties.Settings.Default.password = "";
                         Properties.Settings.Default.Save();
-                    }                    
+                    }
+                    this.Close();
                     FormInicio p = new FormInicio();
                     p.Show();
                     //p.ShowDialog();

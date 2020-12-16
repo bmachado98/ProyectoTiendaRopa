@@ -105,18 +105,7 @@ namespace Presentacion.Formularios
         {
             Properties.Settings.Default.estalogueado = false;
             Properties.Settings.Default.Save();
-            if (Application.MessageLoop)
-            {
-                // WinForms app                
-                Application.Exit();
-                
-            }
-            else
-            {
-                
-                // Console app
-                Environment.Exit(1);
-            }
+            Application.Exit();            
         }
 
         /*private void btnAgregar_Click(object sender, EventArgs e)
